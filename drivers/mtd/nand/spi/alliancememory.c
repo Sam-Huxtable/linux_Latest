@@ -130,8 +130,8 @@ static int am_ecc_get_status(struct spinand_device *spinand, u8 status)
 
 static const struct spinand_info alliancememory_spinand_table[] = {
 	SPINAND_INFO("AS5F34G04SND",
-		     SPINAND_ID(SPINAND_READID_METHOD_OPCODE_DUMMY, 0x2f),
-		     NAND_MEMORG(1, 2048, 128, 64, 4096, 80, 1, 1, 1),
+		     SPINAND_ID(SPINAND_READID_METHOD_OPCODE_DUMMY, 0x8d),
+		     NAND_MEMORG(1, 4096, 256, 64, 4096, 80, 1, 1, 1),
 		     NAND_ECCREQ(4, 512),
 		     SPINAND_INFO_OP_VARIANTS(&read_cache_variants,
 					      &write_cache_variants,
